@@ -22,7 +22,7 @@ miArbol2.insert(84);
 miArbol2.insert(88);
 miArbol2.insert(55);
 
-describe("Ejercicio 09 - searchPrice", () => {
+xdescribe("Ejercicio 09 - searchPrice", () => {
   test("En caso de recibir por parámetro un precio igual o menor a 0 (cero), debe retornar el string 'Error'", () => {
     expect(miArbol1.searchPrice(0)).toEqual("Error");
     expect(miArbol1.searchPrice(-1)).toEqual("Error");

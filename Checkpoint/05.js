@@ -58,7 +58,14 @@
 
 function cobrarClientes(clientes) {
   // Tu código aquí:
- 
+  let names = [];
+  while(clientes.size()) {
+    let person = clientes.dequeue();
+    if(person.dinero > person.precioProductos) {
+      names.push(person.nombre);
+    } else return names
+  }
+  return false
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️

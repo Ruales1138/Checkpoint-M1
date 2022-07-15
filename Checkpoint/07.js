@@ -16,7 +16,20 @@
 
 function ordenarPrecios(arr) {
     // Tu código aquí:
-
+    var flag = true;
+    while(flag){
+      flag = false
+      for (let i = 0; i < arr.length; i++) {
+        if(arr[i] === 0) return false;
+        if(arr[i] > arr[i+1]) {
+          var aux = arr[i];
+          arr[i] = arr[i+1];
+          arr[i+1] = aux;
+          flag = true
+        }
+      }
+    }
+    return arr
 }
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {

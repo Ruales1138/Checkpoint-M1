@@ -22,7 +22,7 @@ miArbol2.insert(84);
 miArbol2.insert(88);
 miArbol2.insert(55);
 
-describe("Ejercicio 08 - searchMax", () => {
+xdescribe("Ejercicio 08 - searchMax", () => {
   test("La función debe retornar el número máximo dentro del árbol", () => {
     expect(miArbol1.searchMax()).toEqual(45);
     expect(miArbol2.searchMax()).toEqual(89);
