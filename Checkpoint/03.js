@@ -56,8 +56,16 @@ const { Stack } = require("../DS");
 //
 
 function apilarCajas(arr) {
+  let stack = new Stack();
+  let sum = 0; 
+  if(!arr.length) return 'Error';
+  for (let i = 0; i < arr.length; i++) {
+    stack.push(arr[i].nombre)
+    sum += arr[i].peso
+  }
+  if(sum > 50) return 'No se puede crear la pila'
+  else return stack
   // Tu código aquí
-
 }
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
