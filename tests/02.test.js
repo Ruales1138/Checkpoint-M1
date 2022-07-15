@@ -1,5 +1,5 @@
 const { calcularIndice } = require('../Checkpoint/02');
-xdescribe("Ejercicio 02 - calcularIndice", () => {
+describe("Ejercicio 02 - calcularIndice", () => {
   let n
   let data = {
     0:15,
