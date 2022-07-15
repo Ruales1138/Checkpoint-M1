@@ -10,7 +10,7 @@ const productos = {
 };
 
 
-xdescribe("Test de ejercicio 06 - agregarProductos", () => {
+describe("Test de ejercicio 06 - agregarProductos", () => {
   test("Si el método recibe un producto que no existe en la lista, debe retornar el string 'Producto inexistente'", () => {
     const arbolDeProductos = new BinarySearchTree("Leche");
     expect(arbolDeProductos.agregarProductos("Gaseosa", productos)).toEqual(
