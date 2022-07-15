@@ -1,7 +1,7 @@
 const { henryParking } = require("../Checkpoint/01");
 const { Queue } = require("../DS");
 
-xdescribe("Ejercicio 01 - henryParking", () => {
+describe("Ejercicio 01 - henryParking", () => {
   test("La función debe retornar la QUEUE resultante de procesar los movimientos", () => {
     expect(henryParking([23, 43, "OUT", 65])).toEqual({ array: [43, 65] });
     expect(henryParking([23, "OUT", 65])).toEqual({ array: [65] });
